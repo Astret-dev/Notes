@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable-v24/baseline_check_box_20.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable-v24/baseline_check_box_24.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_baseline_check_box_24.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_baseline_check_box_outline_blank_24.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_black_box.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_check.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_checkbox.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_description.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_description_yellow.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_down.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_todo_black.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_todo_box.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_todo_yellow.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/Subramanian/AndroidStudioProjects/Notes/app/src/main/res/layout/constrain_demo.xml" value="0.16770833333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
