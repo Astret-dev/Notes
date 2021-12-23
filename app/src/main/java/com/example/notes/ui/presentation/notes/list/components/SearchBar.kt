@@ -20,7 +20,6 @@ import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.unit.dp
 import com.example.notes.ui.theme.Blue
 import com.example.notes.ui.theme.Neutral3
-import com.example.notes.ui.theme.NoteTheme
 
 @Composable
 fun SearchBar(
@@ -35,22 +34,27 @@ fun SearchBar(
         mutableStateOf(true)
     }
 
-    Row(modifier = Modifier.fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
 
-        Row(modifier = Modifier
-            .weight(1f)
-            .padding(end = 8.dp)
-            .background(color = Neutral3, shape = CircleShape)
-            .padding(horizontal = 8.dp, vertical = 8.dp),
-            verticalAlignment = Alignment.CenterVertically) {
+        Row(
+            modifier = Modifier
+                .weight(1f)
+                .padding(end = 8.dp)
+                .background(color = Neutral3, shape = CircleShape)
+                .padding(horizontal = 8.dp, vertical = 8.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
 
-            Icon(imageVector = Icons.Filled.Search,
+            Icon(
+                imageVector = Icons.Filled.Search,
                 contentDescription = "Search_Icon",
-                tint = NoteTheme.colors.icons,
                 modifier = Modifier
                     .wrapContentWidth(Alignment.Start)
-                    .padding(start = 4.dp))
+                    .padding(start = 4.dp)
+            )
 
             BasicTextField(
                 value = searchText,
@@ -74,17 +78,20 @@ fun SearchBar(
                     }
             )
 
-            Icon(imageVector = Icons.Filled.Clear,
+            Icon(
+                imageVector = Icons.Filled.Clear,
                 contentDescription = "Clear_Icon",
-                tint = NoteTheme.colors.icons,
                 modifier = Modifier
                     .wrapContentWidth(Alignment.End)
-                    .padding(end = 4.dp))
+                    .padding(end = 4.dp)
+            )
         }
 
-        Text(text = "Cancel", style = MaterialTheme.typography.h2, color = Blue,
+        Text(
+            text = "Cancel", style = MaterialTheme.typography.h2, color = Blue,
             modifier = Modifier
-                .wrapContentWidth(Alignment.End))
+                .wrapContentWidth(Alignment.End)
+        )
 
     }
 

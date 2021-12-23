@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface NotesLocalRepository {
 
-    fun getNotes() : Flow<List<Note>>
+    fun getNotes() : Flow<List<Note>>?
 
     suspend fun insertNote(note: Note)
 

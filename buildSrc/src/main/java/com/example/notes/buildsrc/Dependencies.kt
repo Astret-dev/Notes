@@ -82,6 +82,14 @@ object Libs {
         const val room_ktx = "androidx.room:room-ktx:$roomVersion"
     }
 
+    object Dagger{
+
+        const val daggerHilt = "com.google.dagger:hilt-android:2.38.1"
+        const val hiltAndroidCompiler  = "com.google.dagger:hilt-android-compiler:2.38.1"
+        const val hiltLifeCycle  = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
+        const val hiltCompiler  = "androidx.hilt:hilt-compiler:1.0.0"
+    }
+
 
 }
 

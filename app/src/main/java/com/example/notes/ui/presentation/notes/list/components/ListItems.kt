@@ -14,7 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.unit.dp
 import com.example.notes.domain.model.Note
-import com.example.notes.ui.theme.NoteTheme
+import com.example.notes.ui.theme.taskItemBackgroundColor
+import com.example.notes.ui.theme.taskItemTextColor
 
 
 @ExperimentalMaterialApi
@@ -23,28 +24,34 @@ fun ListViewItem(
     note: Note,
     onClick: () -> Unit,
 ) {
-    Card(modifier = Modifier
-        .fillMaxWidth()
-        .padding(16.dp)
-        .background(color = NoteTheme.colors.primary)
-        .shadow(4.dp),
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(color = MaterialTheme.colors.taskItemBackgroundColor)
+            .shadow(4.dp),
         shape = RoundedCornerShape(10.dp),
-        onClick = onClick) {
+        onClick = onClick
+    ) {
 
-        Column(modifier = Modifier
-            .padding(8.dp)) {
+        Column(
+            modifier = Modifier
+                .padding(8.dp)
+        ) {
 
-            Text(text = note.title,
+            Text(
+                text = note.title,
                 style = MaterialTheme.typography.h1,
-                color = NoteTheme.colors.title
+                color = MaterialTheme.colors.taskItemTextColor
             )
-            Text(text = note.content,
+            Text(
+                text = note.content,
                 style = MaterialTheme.typography.h2,
-                color = NoteTheme.colors.content
+                color = MaterialTheme.colors.taskItemTextColor
             )
-            Text(text = note.dateCreatedFormatted,
+            Text(
+                text = note.dateCreatedFormatted,
                 style = MaterialTheme.typography.subtitle1,
-                color = NoteTheme.colors.content
+                color = MaterialTheme.colors.taskItemTextColor
             )
         }
     }

@@ -3,9 +3,10 @@ import com.example.notes.buildsrc.Versions
 
 plugins {
     id("com.android.application")
-    id("kotlin-android")
-    id("kotlin-kapt")
-    id ("dagger.hilt.android.plugin")
+    kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
+    id("kotlin-parcelize")
 
 }
 
@@ -97,7 +98,7 @@ dependencies {
 
     implementation(Libs.Room.runTime)
     annotationProcessor(Libs.Room.compiler)
-    kapt (Libs.Room.room_compiler)
+    kapt(Libs.Room.room_compiler)
     implementation(Libs.Room.room_ktx)
 
     implementation(Libs.core_ktx)
@@ -109,12 +110,6 @@ dependencies {
     implementation(Libs.Lifecycle.viewModelCompose)
     implementation(Libs.Navigation.navigationCompose)
     implementation(Libs.Coil.coilCompose)
-
-    //Dagger - Hilt
-    implementation ("com.google.dagger:hilt-android:2.38.1")
-    kapt ("com.google.dagger:hilt-android-compiler:2.37")
-    implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
-    kapt ("androidx.hilt:hilt-compiler:1.0.0")
 
     implementation(Libs.Compose.ui)
     implementation(Libs.Compose.composeMaterial)
@@ -131,4 +126,15 @@ dependencies {
     androidTestImplementation(Libs.Test.espresso_core)
     androidTestImplementation(Libs.Test.ui_test_junit4)
     debugImplementation(Libs.Test.ui_tooling)
+
+    //Dagger - Hilt
+    implementation(Libs.Dagger.daggerHilt)
+    kapt(Libs.Dagger.hiltAndroidCompiler)
+//    implementation(Libs.Dagger.hiltLifeCycle)
+    kapt(Libs.Dagger.hiltCompiler)
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }

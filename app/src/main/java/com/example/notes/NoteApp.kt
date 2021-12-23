@@ -1,6 +1,7 @@
 package com.example.notes
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class NoteApp() : Application() {
-}
+@HiltAndroidApp
+class NoteApp : Application()
